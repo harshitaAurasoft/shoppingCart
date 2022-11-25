@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Shopping</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="css/cart.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/aurasoftIcon.jpg" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <section style="background-color: #eee;">
+    <h6 class="mb-0"><a href="index.html" class="text-body">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8S8 119 8 256zm448 0c0 110.5-89.5 200-200 200S56 366.5 56 256S145.5 56 256 56s200 89.5 200 200zm-72-20v40c0 6.6-5.4 12-12 12H256v67c0 10.7-12.9 16-20.5 8.5l-99-99c-4.7-4.7-4.7-12.3 0-17l99-99c7.6-7.6 20.5-2.2 20.5 8.5v67h116c6.6 0 12 5.4 12 12z" />
+        </svg> Back to home</a></h6>
+    <div class="container h-100 py-5">
+      <div class="row  justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card shopping-cart" style="border-radius: 15px;">
+            <div class="card-body text-black">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row" style="background-color: #fafafa;">
+                    <div class="col-8">
+
+                      <h3 class="fw-bold text-uppercase">Your products</h3>
+                    </div>
+                    <div class="col-4">
+                      Grand Total: 
+                      <span class="fw-bold mb-0   totalCartAmount">₹2261</span>
+                    </div>
+                  </div>
+
+                  <!-- <h5 class="fw-bold mb-0  total"></h5> -->
+
+                  <div id="cartNo"></div>
+                  <!-- <div class=" align-items-center mt-4">
+                    <div class="flex-shrink-0">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
+                        class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                        <h5 class="text-primary">Samsung Galaxy M11 64GB</h5>
+                        <h6 style="color: #9e9e9e;">Color: white</h6>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <p class="fw-bold mb-0 me-5 pe-3">₹800</p>
+                        <div class="def-number-input number-input safari_only">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus"></button>
+                          <input class="quantity fw-bold text-black" min="0" name="quantity" value="1" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus"></button>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+
+                        <p class="fw-bold mb-0 me-5 pe-3">Total</p>
+                        <p class="lead fw-normal mb-0">₹1600</p>
+
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class=" align-items-center mt-4">
+                    <div class="flex-shrink-0">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/6.webp"
+                        class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                        <h5 class="text-primary">Samsung Galaxy M11 64GB</h5>
+                        <h6 style="color: #9e9e9e;">Color: white</h6>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <p class="fw-bold mb-0 me-5 pe-3">₹240</p>
+                        <div class="def-number-input number-input safari_only">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus"></button>
+                          <input class="quantity fw-bold text-black" min="0" name="quantity" value="1" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus"></button>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+
+                        <p class="fw-bold mb-0 me-5 pe-3">Total</p>
+                        <p class="lead fw-normal mb-0">₹480</p>
+
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class=" align-items-center mt-4">
+                    <div class="flex-shrink-0">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
+                        class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                        <h5 class="text-primary">Samsung Galaxy M11 64GB</h5>
+                        <h6 style="color: #9e9e9e;">Color: white</h6>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <p class="fw-bold mb-0 me-5 pe-3">₹60</p>
+                        <div class="def-number-input number-input safari_only">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="minus"></button>
+                          <input class="quantity fw-bold text-black" min="0" name="quantity" value="2" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus"></button>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+
+                        <p class="fw-bold mb-0 me-5 pe-3">Total</p>
+                        <p class="lead fw-normal mb-0">₹120</p>
+
+                      </div>
+                    </div>
+                  </div> -->
+
+                </div>
+                <div class="col-12 ">
+
+                  <h3 class="mt-4 pt-2 text-center fw-bold text-uppercase">Payment</h3>
+                  <div class="row" style="background-color: #fafafa;">
+                    <div class="col-9">
+                      Grand Total: 
+                      <span class="fw-bold mb-0 mt-1 totalCartAmount">₹2261</span>
+                      <!-- <h5 class="fw-bold mb-0"></h5> -->
+                    </div>
+                    <div class="col-3">
+                      <button class="btn btn-outline-dark btnBuy">Buy Now</button>
+                    </div>
+
+                  </div>
+
+                </div>
+                <h6 class="mb-0"><a href="index.html" class="text-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8S8 119 8 256zm448 0c0 110.5-89.5 200-200 200S56 366.5 56 256S145.5 56 256 56s200 89.5 200 200zm-72-20v40c0 6.6-5.4 12-12 12H256v67c0 10.7-12.9 16-20.5 8.5l-99-99c-4.7-4.7-4.7-12.3 0-17l99-99c7.6-7.6 20.5-2.2 20.5 8.5v67h116c6.6 0 12 5.4 12 12z" />
+                    </svg>Continue Shopping</a></h6>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="mt-5 bg-dark ">
+    <div class="container">
+      <p style="color: #fff; text-align: center; ">Copyright &copy; Aurasoft 2022</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/utils.js"></script>
+  <script>
+    function updateCartContainer() {
+      const cartItems = getDataFromLocalStorageByName('cart')
+      console.log('cartItems', cartItems);
+      let html = ``;
+      cartItems.map((item) => {
+        html += `<div class=" align-items-center mt-4">
+                 <div class="flex-shrink-0">
+                     <img src="${item.img}"
+                     class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                  </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h5 class="text-primary">${item.name}</h5>
+                        <h6 style="color: #9e9e9e;">${item.details}</h6>
+                      </div>
+                      <div class="col-6">
+                        <p class="fw-bold mb-0 me-5 pe-3">₹${item.price}</p>
+                        <div class="def-number-input number-input safari_only">
+                          <button onclick='cartQuantity(${item.id},"s")'class="minus"></button>
+                          <input class="quantity fw-bold text-black" min="0" name="quantity" value="${item.quantity}" type="number">
+                          <button onclick='cartQuantity(${item.id},"a")' class="plus"></button>
+                        </div>
+                      </div>
+                      <div class="col-6">
+
+                        <p class="fw-bold mb-0 me-5 pe-3">Total</p>
+                        <p class="lead fw-normal mb-0">${+item.price * (+item.quantity)}</p>
+
+                      </div>
+                    </div>
+                  </div>`;
+      });
+      const cartSection = document.getElementById("cartNo");
+      cartSection.innerHTML = html;
+      updateTotalCart();
+    }
+    function cartQuantity(id, type) {
+      console.log('id ', id);
+      console.log('type', type);
+      const cartItems = getDataFromLocalStorageByName('cart');
+      let quantityItemIndex = cartItems.findIndex(item => item.id === id);
+      console.log("quantityItemIndex : ", quantityItemIndex);
+      if (type === 'a') {
+        cartItems[quantityItemIndex].quantity = cartItems[quantityItemIndex].quantity + 1;
+        setDataFromLocalStorageByName('cart', cartItems);
+        alert("Item quantity increased ");
+      } else if (type === 's') {
+        if (cartItems[quantityItemIndex].quantity > 1) {
+          cartItems[quantityItemIndex].quantity = cartItems[quantityItemIndex].quantity - 1;
+          setDataFromLocalStorageByName('cart', cartItems);
+          alert("Item quantity decreased ");
+        }
+      }
+      updateCartContainer();
+    }
+
+    function updateTotalCart() {
+      const cartItems = getDataFromLocalStorageByName('cart');
+      let total = 0;
+      for (var i = 0; i < cartItems.length; i++) {
+        total += (cartItems[i].quantity * cartItems[i].price);
+      }
+      var [p0,p1] = document.getElementsByClassName("totalCartAmount");
+      p0.innerText = total;
+      p1.innerText = total;
+    }
+    updateCartContainer();
+  </script>
+
+</body>
+
+</html>
