@@ -70,3 +70,7 @@ body {
 .cartBtn a{
   list-style: none !important;
 }
+.footer{
+  padding-bottom: 0px !important;
+
+}
